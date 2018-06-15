@@ -15,10 +15,11 @@ import {
 
 import { AppComponent } from './app.component';
 import { MenuSheetComponent } from './menu-sheet/menu-sheet.component';
+import { CategoryComponent } from './category/category.component';
 import { AddCategoryComponent } from './category/add/add-category.component';
 
 const routes: Routes = [
-  {path: 'category', component: AddCategoryComponent},
+  {path: 'category', component: CategoryComponent},
   {path: 'category/add', component: AddCategoryComponent},
   {path: 'word', component: AddCategoryComponent},
   {path: 'word/add', component: AddCategoryComponent},
@@ -29,6 +30,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MenuSheetComponent,
+    CategoryComponent,
     AddCategoryComponent,
   ],
   imports: [

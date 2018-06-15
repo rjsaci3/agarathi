@@ -1,0 +1,31 @@
+.form-card {
+  max-width: 500px;
+  margin: 20px auto;
+
+  @media #{$sm} {
+    max-width: 90%;
+    margin: 5%;
+  }
+}
+
+.list-card {
+  max-width: 500px;
+  margin: auto;
+  padding: 0!important;
+
+  .mat-list-item {
+    height: auto!important;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+  }
+
+  h4 {
+    text-transform: capitalize;
+    font-weight: bold!important;
+    margin-bottom: 5px;
+  }
+
+  p {
+
+  }
+}

@@ -1,6 +1,27 @@
-<mat-list>
-  <mat-list-item routerLink="/category" routerLinkActve="active">Add Category</mat-list-item>
-  <mat-list-item routerLink="/category/add" routerLinkActve="active">List Categories</mat-list-item>
-  <mat-list-item routerLink="/word" routerLinkActve="active">Add Word</mat-list-item>
-  <mat-list-item routerLink="/word/add" routerLinkActve="active">List Words</mat-list-item>
-</mat-list>
+<mat-nav-list>
+  <a mat-list-item (click)="openLink($event)" routerLink="/category" routerLinkActve="active">
+    <i mat-list-icon class="icons icon-list"></i>
+    <p mat-line>Categories</p>
+  </a>
+  <a mat-list-item (click)="openLink($event)" routerLink="/category/add" routerLinkActve="active">
+    <i mat-list-icon class="icons icon-add"></i>
+    <p mat-line>Add Category</p>
+    </a>
+  <a mat-list-item (click)="openLink($event)" routerLink="/word" routerLinkActve="active">
+    <i mat-list-icon class="icons icon-list"></i>
+    <p mat-line>Words</p>
+  </a>
+  <a mat-list-item (click)="openLink($event)" routerLink="/word/add" routerLinkActve="active">
+    <i mat-list-icon class="icons icon-add"></i>
+    <p mat-line>Add Word</p>
+  </a>
+  <a mat-list-item (click)="openLink($event)" routerLink="/word/add" routerLinkActve="active">
+    <i mat-list-icon class="icons icon-qa"></i>
+    <p mat-line>Quiz</p>
+  </a>
+  <a mat-list-item (click)="openLink($event)" routerLink="/word/add" routerLinkActve="active">
+    <i mat-list-icon class="icons icon-logout"></i>
+    <p mat-line>Log out</p>
+  </a>
+  <a (click)="openLink($event)" class="close"><i class="icons icon-close"></i></a>
+</mat-nav-list>

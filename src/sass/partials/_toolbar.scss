@@ -1,0 +1,32 @@
+.fixed-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fab-menu {
+  left: 50%;
+  bottom: 28px;
+  margin-left: -28px!important;
+  border: 6px solid $body-bg!important;
+  box-sizing: content-box!important;
+  box-shadow: none!important;
+}
+
+.mat-bottom-sheet-container {
+  padding: 8px 0!important;
+
+  a.active {
+    color: #b71c1c;
+  }
+
+  a.close {
+    text-align: center;
+    display: block;
+  }
+
+  .icons {
+    padding: 2px!important;
+  }
+}

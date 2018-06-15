@@ -1,0 +1,17 @@
+$primary-color: #673ab7;
+$secondary-color: #ffd740;
+$error-color: #F44336;
+$success-color: #4CAF50;
+$info-color: #03a9f4;
+$body-bg: #e8e8e8;
+
+$small: 767px;
+$medium: 768px;
+$large: 1200px;
+
+$sm: 'only screen and (max-width: ' + $small + ')';
+$md: 'only screen and (min-width: ' + $medium + ') and (max-width: ' + $large + ')';
+$md-lg: 'only screen and (min-width: ' + $medium + ')';
+$lg: 'only screen and (min-width: ' + $large + ')';
+
+$icon-size: 30px;
