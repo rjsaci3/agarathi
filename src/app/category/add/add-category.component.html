@@ -1,11 +1,13 @@
 <mat-card class="form-card">
-  <mat-form-field>
-    <input matInput placeholder="Category">
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="Definition">
-  </mat-form-field>
-  <div class="align-center">
-    <button mat-raised-button color="accent">Submit</button>
-  </div>
+  <form (submit)="addCategory()" autocomplete="off">
+    <mat-form-field>
+      <input matInput [(ngModel)]="newCategory.name" name="name" placeholder="Category">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="newCategory.definition" name="definition" placeholder="Definition">
+    </mat-form-field>
+    <div class="align-center">
+      <button mat-raised-button color="accent">Submit</button>
+    </div>
+  </form>
 </mat-card>
