@@ -1,7 +1,7 @@
 <mat-card class="form-card">
   <form (submit)="addCategory()" autocomplete="off">
     <mat-form-field>
-      <input matInput [(ngModel)]="newCategory.name" name="name" placeholder="Category">
+      <input matInput #nameInput [(ngModel)]="newCategory.name" name="name" placeholder="Category">
     </mat-form-field>
     <mat-form-field>
       <input matInput [(ngModel)]="newCategory.definition" name="definition" placeholder="Definition">

@@ -7,28 +7,32 @@
   background-position: center;
   vertical-align: middle;
 
-  &.icon-menu {
-    background-image: url('../assets/icons/menu-icon.svg');
-  }
-
   &.icon-list {
-    background-image: url('../assets/icons/list-icon.svg');
+    background-image: url('../assets/icons/list.svg');
   }
 
   &.icon-add {
-    background-image: url('../assets/icons/add-icon.svg');
+    background-image: url('../assets/icons/add.svg');
   }
 
   &.icon-qa {
-    background-image: url('../assets/icons/qa-icon.svg');
+    background-image: url('../assets/icons/quiz.svg');
   }
 
   &.icon-logout {
-    background-image: url('../assets/icons/logout-icon.svg');
+    background-image: url('../assets/icons/logout.svg');
   }
 
   &.icon-close {
-    background-image: url('../assets/icons/close-icon.svg');
+    background-image: url('../assets/icons/close.svg');
+  }
+
+  &.icon-more-vert {
+    background-image: url('../assets/icons/more-vert.svg');
+  }
+
+  &.icon-more-horiz {
+    background-image: url('../assets/icons/more-horiz.svg');
   }
 }
 

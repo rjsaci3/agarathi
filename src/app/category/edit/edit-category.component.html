@@ -1,0 +1,11 @@
+<form (submit)="updateCategory(category)" autocomplete="off">
+  <mat-form-field>
+    <input matInput [(ngModel)]="category.name" name="name" placeholder="Category">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="category.definition" name="definition" placeholder="Definition">
+  </mat-form-field>
+  <div class="align-center">
+    <button mat-raised-button color="accent">Submit</button>
+  </div>
+</form>

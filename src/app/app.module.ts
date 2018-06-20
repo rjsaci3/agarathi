@@ -17,27 +17,32 @@ import {
   MatButtonModule,
   MatCardModule,
   MatSnackBarModule,
+  MatProgressSpinnerModule,
+  MatMenuModule,
+  MatDialogModule,
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { MenuSheetComponent } from './menu-sheet/menu-sheet.component';
-import { CategoryComponent } from './category/category.component';
+import { ListCategoriesComponent } from './category/list/list-categories.component';
 import { AddCategoryComponent } from './category/add/add-category.component';
+import { EditCategoryComponent } from './category/edit/edit-category.component';
 
 const routes: Routes = [
-  {path: 'category', component: CategoryComponent},
+  {path: 'category', component: ListCategoriesComponent},
   {path: 'category/add', component: AddCategoryComponent},
-  {path: 'word', component: AddCategoryComponent},
+  {path: 'word', component: ListCategoriesComponent},
   {path: 'word/add', component: AddCategoryComponent},
-  {path: '', component: AddCategoryComponent},
+  {path: '', component: ListCategoriesComponent},
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuSheetComponent,
-    CategoryComponent,
+    ListCategoriesComponent,
     AddCategoryComponent,
+    EditCategoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,9 +60,13 @@ const routes: Routes = [
     MatButtonModule,
     MatCardModule,
     MatSnackBarModule,
+    MatProgressSpinnerModule,
+    MatMenuModule,
+    MatDialogModule,
   ],
   entryComponents: [
     MenuSheetComponent,
+    EditCategoryComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

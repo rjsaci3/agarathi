@@ -1,27 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
-import { MatSnackBar } from '@angular/material'
 
-import { Category } from '../../model/category.model';
+import { CommonService } from '../../_shared/common.service';
+import { Category } from '../../_models/category.model';
 
 @Component({
   selector: 'add-category',
   templateUrl: 'add-category.component.html',
 })
-export class AddCategoryComponent implements OnInit {
-  private categoriesCollection: AngularFirestoreCollection<Category>;
-  private newCategory: Category = {
+export class AddCategoryComponent implements OnInit, AfterViewInit {
+  categoriesCollection: AngularFirestoreCollection<Category>;
+  newCategory: Category = {
     name: null,
     definition: null
   };
 
+  @ViewChild('nameInput') nameInput;
+
   constructor(
     private afs: AngularFirestore,
-    private snackBar: MatSnackBar,
+    private commonService: CommonService,
   ) {}
 
   ngOnInit() {
     this.categoriesCollection = this.afs.collection('categories');
+  }
+
+  ngAfterViewInit() {
+    // this.nameInput.nativeElement.focus();
   }
 
   addCategory() {
@@ -30,13 +36,7 @@ export class AddCategoryComponent implements OnInit {
         name: null,
         definition: null
       };
-      this.openSnackBar('Category added');
-    });
-  }
-
-  openSnackBar(message, action = '') {
-    this.snackBar.open(message, action, {
-      duration: 3000
+      this.commonService.openSnackBar('Category added');
     });
   }
 }

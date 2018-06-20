@@ -1,3 +1,18 @@
 .align-center {
   text-align: center;
 }
+
+.no-record {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.loader {
+  padding: 20px 0;
+
+  .mat-spinner {
+    margin: auto;
+  }
+}

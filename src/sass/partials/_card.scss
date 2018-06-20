@@ -1,5 +1,5 @@
 .form-card {
-  max-width: 500px;
+  max-width: 452px;
   margin: 20px auto;
 
   @media #{$sm} {
@@ -10,7 +10,7 @@
 
 .list-card {
   max-width: 500px;
-  margin: auto;
+  margin: 20px auto;
   padding: 0!important;
 
   .mat-list-item {
